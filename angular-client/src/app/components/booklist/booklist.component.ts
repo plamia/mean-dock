@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-booklist',
   templateUrl: './booklist.component.html',
-  styleUrls: ['./booklist.component.css']
+  styleUrls: ['./booklist.component.scss']
 })
 export class BooklistComponent implements OnInit {
 	bookService: any;

@@ -7,15 +7,15 @@ RUN mkdir -p /usr/src/app
 # Change directory so that our commands run inside this new directory
 WORKDIR /usr/src/app
 
-ADD VERSION .
+# Copy dependency definitions
+COPY package.json /usr/src/app
 
 RUN npm install -g nodemon
 
 # Install dependecies
 RUN npm install
 
-# Copy dependency definitions
-COPY package.json /usr/src/app
+
 
 # Get all the code needed to run the app
 COPY . /usr/src/app

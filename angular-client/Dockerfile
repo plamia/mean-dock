@@ -7,7 +7,6 @@ RUN mkdir -p /usr/src/app
 # Change directory so that our commands run inside this new directory
 WORKDIR /usr/src/app
 
-ADD VERSION .
 # Copy dependency definitions
 COPY package.json /usr/src/app
 
